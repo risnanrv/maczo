@@ -1,0 +1,99 @@
+/* Heading */
+.mac-head {
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-size: 35px;
+}
+
+/* Default styles (Big Screens) */
+.mac-scroll-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Card container for sliding effect on small screens */
+.mac-cards-wrapper {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for each card */
+.laptop-card {
+    
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 16px;
+        width: 255px; /* Set to 300px as per your requirement */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        background-color: #fff;
+        text-align: center;
+        flex-shrink: 0; /* Prevent shrinking */
+    
+}
+
+/* Laptop Image */
+.laptop-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Laptop Details */
+.laptop-details {
+    width: 100%;
+}
+
+/* Laptop Brand */
+.laptop-brand {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Laptop Model */
+.laptop-model {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Specifications */
+.spec {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Green Tick */
+.tick {
+    color: green;
+    margin-right: 8px;
+}
+
+/* Auto sliding on small screens */
+@media (max-width: 768px) {
+    .mac-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+
+    .mac-scroll-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome & Safari */
+    }
+
+    .mac-cards-wrapper {
+        flex-wrap: nowrap;
+        scroll-snap-align: start;
+    }
+
+    .laptop-card {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+}

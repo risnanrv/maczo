@@ -1,0 +1,61 @@
+.contact-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-text{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* WhatsApp */
+  .whatsapp {
+    background-color: #25d366;
+  }
+  
+  /* Instagram */
+  .instagram {
+    background-color: #e1306c;
+  }
+  
+  /* Email */
+  .email {
+    background-color: #ff9800;
+  }
+  
+  /* Hover effect */
+  .social-links a:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-head{
+      text-align: center;
+      margin-bottom:  30px;
+    }
+    .submit-btn-container{
+      display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+    }
+  }

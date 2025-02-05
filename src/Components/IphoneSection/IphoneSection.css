@@ -1,0 +1,134 @@
+.iphone-head {
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-size: 35px;
+}
+
+/* Default styles (Big Screens) */
+.iphone-scroll-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Card container for sliding effect on small screens */
+.iphone-cards-wrapper {
+    display: flex;
+    gap: 90px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for each card */
+.iphone-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    width: 230px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Stock Status */
+.stock-status {
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+/* If using FontAwesome or Bootstrap Icons */
+.stock-status i {
+    color: green;
+    font-size: 16px;
+}
+
+/* Product Image */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Product Name */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Price */
+.price {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Auto sliding on small screens */
+@media (max-width: 768px) {
+    .iphone-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+
+    .iphone-scroll-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome & Safari */
+    }
+
+    .iphone-cards-wrapper {
+        flex-wrap: nowrap;
+        scroll-snap-align: start;
+    }
+
+    .iphone-card {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+}
+/* Centering the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+}
+
+/* Styling the button */
+.more-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+/* Hover effect */
+.more-button:hover {
+    background-color: #333;
+}
+
+/* Styling the icon */
+.icon {
+    font-size: 18px;
+}
