@@ -6,7 +6,7 @@ function ContactSection() {
   return (
   
     <Container className="contact-section my-5">
-    <Row>
+    <Row style={{display: "flex"}}>
       {/* Contact Info */}
       <Col md={6}>
         <h2 className="contact-head fw-bold mb-5">Contact Info</h2>
@@ -33,7 +33,7 @@ function ContactSection() {
 
       {/* Inquiry Form */}
       <Col md={6}>
-        <h2 className=" contact-head mt-5 fw-bold mb-5">Send Your Inquiry</h2>
+        <h2 className=" contact-head  fw-bold mb-5">Send Your Inquiry</h2>
         <Form>
           <Form.Group className="mb-3">
             <Form.Control type="text" placeholder="Full Name*" required />

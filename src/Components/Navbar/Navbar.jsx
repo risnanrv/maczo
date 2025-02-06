@@ -19,14 +19,15 @@ function Navbar() {
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Products
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style={{marginLeft: "2px", border: "none"}}>
               <li><a class="dropdown-item" href="#">Iphone</a></li>
               <li><a class="dropdown-item" href="#">Mac</a></li>
               <li><a class="dropdown-item" href="#">Ipad</a></li>
+              <li><a class="dropdown-item" href="#">Gadgets</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href='/contact'>Contact</a>

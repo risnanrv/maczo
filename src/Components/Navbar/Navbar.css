@@ -6,13 +6,15 @@
     height: 60px;
 }
 .navbar-collapse ul{
-    margin-left: 95px;
+    margin-left: 75px;
+    gap: 50px;
 }
 .navbar-collapse ul li a{
     font-size: 24px;
-   margin-left: 30px;
    font-weight: bold;
+   color: rgb(0, 0, 0);
 }
+
 @media screen and (max-width:768px) {
     .navbar{
         margin: 0px 20px;
@@ -20,5 +22,11 @@
     .nav-logo{
         width: 185px;
         height: 60px;
+    }
+    .navbar-collapse ul{
+        gap: 10px;
+    }
+    .dropdown-menu {
+        margin-right: 100px;
     }
 }

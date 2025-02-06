@@ -16,8 +16,8 @@ function MacSection() {
             <div key={index} className="laptop-card">
               <img src={MacImg} alt="HP 255 R5 5625U" className="laptop-image" />
               <div className="laptop-details">
-                <div className="laptop-brand">DOS</div>
-                <div className="laptop-model">HP 255 R5 5625U</div>
+                
+                <div className="laptop-model">Apple Macbook Air </div>
                 <div className="spec">
                   <span className="tick"><FaCircleCheck /></span> R5 5625U Processor
                 </div>
