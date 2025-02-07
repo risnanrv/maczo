@@ -14,7 +14,9 @@
    font-weight: bold;
    color: rgb(0, 0, 0);
 }
-
+.dropdown-menu li{
+    margin-left: 0px;
+}
 @media screen and (max-width:768px) {
     .navbar{
         margin: 0px 20px;
@@ -22,11 +24,11 @@
     .nav-logo{
         width: 185px;
         height: 60px;
+    }.dropdown-menu {
+        margin-right: 100px;
     }
     .navbar-collapse ul{
         gap: 10px;
     }
-    .dropdown-menu {
-        margin-right: 100px;
-    }
+    
 }

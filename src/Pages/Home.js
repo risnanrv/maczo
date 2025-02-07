@@ -5,12 +5,14 @@ import ProductCards from '../Components/ProductCards/ProductCards'
 import IphoneSection from '../Components/IphoneSection/IphoneSection'
 import MacSection from '../Components/MacSection/MacSection'
 import Footer from '../Components/Footer/Footer'
+import ThreeButtons from './../Components/ThreeButtons';
 
 function Home() {
   return (
     <div>
       <Navbar/>
       <Herosection/>
+      <ThreeButtons/>
       <ProductCards/>
       <IphoneSection/>
       <MacSection/>
