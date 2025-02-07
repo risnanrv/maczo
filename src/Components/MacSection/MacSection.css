@@ -73,7 +73,13 @@
     color: green;
     margin-right: 8px;
 }
-
+.price {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+    font-weight: bold;
+    margin-top: 10px;
+}
 /* Auto sliding on small screens */
 @media (max-width: 768px) {
     .mac-scroll-container {

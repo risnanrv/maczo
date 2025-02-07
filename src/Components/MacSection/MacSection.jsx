@@ -30,6 +30,7 @@ function MacSection() {
                 <div className="spec">
                   <span className="tick"><FaCircleCheck /></span> 15.6 HD Display
                 </div>
+                
               </div>
             </div>
           ))}

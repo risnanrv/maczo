@@ -21,7 +21,7 @@ function IphoneSection() {
                 <img src={IphoneImg} alt="Product" />
               </div>
               <div className="product-name">Apple iPhone 16 Plus (Ultramarine, 128 GB)</div>
-              <div className="price">$89,900</div>
+              <div className="price">89,900</div>
             </div>
           ))}
         </div>

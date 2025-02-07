@@ -6,6 +6,9 @@ import IphoneSection from '../Components/IphoneSection/IphoneSection'
 import MacSection from '../Components/MacSection/MacSection'
 import Footer from '../Components/Footer/Footer'
 import ThreeButtons from './../Components/ThreeButtons';
+import IpadSection from '../Components/IpadSection/IpadSection'
+import GadgetSection from '../Components/GadgetSection/GadgetSection'
+import EnquirySection from '../Components/EnquirySection/EnquirySection'
 
 function Home() {
   return (
@@ -16,7 +19,9 @@ function Home() {
       <ProductCards/>
       <IphoneSection/>
       <MacSection/>
-
+      <IpadSection/>
+      <GadgetSection/>
+      <EnquirySection/>
       <Footer/>
     </div>
   )
