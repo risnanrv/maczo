@@ -54,3 +54,10 @@
 .inquiry-form button:hover {
     background-color: #0056b3;
 }
+@media screen and (max-width:768px) {
+    .inquiry-form-container {
+        width: 650px;
+        margin-left: -119px;
+       
+    }
+}
